@@ -1,3 +1,25 @@
+### Dependency
+python 3.5
+
+### Setup Server
+```
+pip install -r requirements.txt
+./manage.py migrate
+./manage.py runserver
+```
+
+### Setup Client
+```
+cd static/client-app/
+yarn
+yarn start
+```
+
+### Output
+http://localhost:5000/
+
+or `yarn build` and http://localhost:8000/static/index.html
+
 ### Trying out the dynamic_rest package
 
 Request: `http://127.0.0.1:8000/users?include[]=water_cans_delivered.*&include[]=water_cans_delivered.delivered_to.*`
